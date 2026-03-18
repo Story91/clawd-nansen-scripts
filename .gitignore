@@ -1,0 +1,13 @@
+# Dependencies
+node_modules/
+
+# Reports (generated files)
+scripts/reports/*.txt
+!scripts/reports/.gitkeep
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log

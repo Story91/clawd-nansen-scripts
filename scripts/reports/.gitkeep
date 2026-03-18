@@ -1,0 +1,5 @@
+# Reports Directory
+
+Generated reports are saved here with timestamps:
+- `base_scan_YYYYMMDD_HHMM.txt`
+- `hl_copytrade_YYYYMMDD_HHMM.txt`
