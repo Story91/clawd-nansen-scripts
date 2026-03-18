@@ -1,11 +1,13 @@
 # NansenCLI Scripts
 
-Collection of scripts for generating crypto research reports using Nansen CLI.
+Collection of scripts for generating crypto research reports using Nansen CLI, with automatic Twitter posting to @Clawdex_.
 
 ## Scripts
 
 ### `base-sniper.js`
 Base accumulation sniper - analyzes token flows on Base network.
+- Runs: every 8 hours (via cron)
+- Posts summary to: @Clawdex_ Twitter
 
 ```bash
 nansen account
@@ -14,6 +16,8 @@ nansen research token screener --chain base --timeframe 24h
 
 ### `hyperliquid-copytrade.js`
 Hyperliquid copytrade analysis - tracks top traders and their positions.
+- Runs: every 8 hours (via cron)
+- Posts summary to: @Clawdex_ Twitter
 
 ```bash
 nansen research perp leaderboard --days 30
@@ -51,5 +55,7 @@ Reports are generated in `reports/` directory:
 ## Cron Jobs
 
 These scripts are automated via OpenClaw:
-- Base Accumulation Sniper: every 8 hours
-- Hyperliquid Copytrade: every 8 hours (posts to Twitter)
+- **Base Accumulation Sniper**: every 8 hours → posts to @Clawdex_ Twitter
+- **Hyperliquid Copytrade**: every 8 hours → posts to @Clawdex_ Twitter
+
+Both jobs mention @nansen_ai and use #NansenCLI hashtag.

@@ -1,5 +1,6 @@
 // base-sniper.js
 // Base Accumulation Sniper - analyzes token flows on Base network
+// Posts summary to Twitter @Clawdex_
 // Usage: node base-sniper.js
 
 const fs = require('fs');
